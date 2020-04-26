@@ -3,7 +3,7 @@ $(document).ready(function(){
     $("input").on("keyup blur change", function () {
         var casefee = $("#casefee").val();
         var Insurance = $("#Insurance").val();
-        var OutOfPI = $("#OutOfPI").val(2780);
+        var OutOfPI = $("#OutOfPI").val();
 
         var UB = $("#UB").val();
         var dd = 0;
@@ -13,7 +13,7 @@ $(document).ready(function(){
         var oopi = parseFloat(OutOfPI);
         var dd = parseFloat(dd);
         var dds = dd+oopi;
-        $("#OutOfPI").val(oopi);
+        $("#OutOfPI").val(dds);
         
     });
 });
